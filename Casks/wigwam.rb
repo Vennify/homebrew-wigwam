@@ -3,7 +3,7 @@ cask "wigwam" do
   name "wigwam"
   desc "Access tmux sessions from the browser"
   homepage "https://github.com/Vennify/wigwam-releases"
-  version "0.1.8"
+  version "0.1.9"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "wigwam" do
   on_macos do
     on_intel do
       url "https://github.com/Vennify/wigwam-releases/releases/download/v#{version}/wigwam_#{version}_darwin_amd64.tar.gz"
-      sha256 "6f9c01b111c676971081f657ca9d555d827a218a2327122bbbca907e606ad6f0"
+      sha256 "5d8753a2bbc7d1373cdc10269b7b39b755441e4874466f57f20e9f81a32efdd5"
     end
     on_arm do
       url "https://github.com/Vennify/wigwam-releases/releases/download/v#{version}/wigwam_#{version}_darwin_arm64.tar.gz"
-      sha256 "32f2628a428d0ed5021db5aadcd2f5b71bb8b1df38ba91f7352fda645a464aa3"
+      sha256 "9880270eac03a66bf9181b3fdefa3e6eebabdb1bc53a4548cc9d4dc382dd1ee7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Vennify/wigwam-releases/releases/download/v#{version}/wigwam_#{version}_linux_amd64.tar.gz"
-      sha256 "e7a6bdf5f08468aa6ee8c3fd80691ac5ca1a66dbfe7bef2b816ea12e17f721a0"
+      sha256 "78e422e718416c5583d8690c4862474f2a7ffc51183002a7e619e2d459ca952d"
     end
     on_arm do
       url "https://github.com/Vennify/wigwam-releases/releases/download/v#{version}/wigwam_#{version}_linux_arm64.tar.gz"
-      sha256 "11192dd801da3411c77b6902f93b92dce57af613eeb0a2a88f27441148be648c"
+      sha256 "708052f32ef87c83320101e32bba8840152c45ddc4b436999ebbaa0669efce21"
     end
   end
 
