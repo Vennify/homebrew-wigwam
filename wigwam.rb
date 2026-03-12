@@ -5,20 +5,20 @@
 class Wigwam < Formula
   desc "Access tmux sessions from the browser"
   homepage "https://github.com/Vennify/wigwam-releases"
-  version "0.8.1"
+  version "0.8.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.1/wigwam_0.8.1_darwin_amd64.tar.gz"
-      sha256 "400a5d33349dd21023f9972575e75cbc90f3354b7a48b09fbba0dd12417141c3"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.2/wigwam_0.8.2_darwin_amd64.tar.gz"
+      sha256 "bfdd31c4ccc7133f76d14389ec3fe278a06bfb79310e3d8e15e4725cc9cc5854"
 
       define_method(:install) do
         bin.install "wigwam"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.1/wigwam_0.8.1_darwin_arm64.tar.gz"
-      sha256 "d41264a093d2a7002934c386d65aa88e9844259febd58e05b1049f804a89bd40"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.2/wigwam_0.8.2_darwin_arm64.tar.gz"
+      sha256 "86a714dc02572cc70591c1b5a1b94fa44767851fb1203190038973664581111f"
 
       define_method(:install) do
         bin.install "wigwam"
@@ -28,15 +28,15 @@ class Wigwam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.1/wigwam_0.8.1_linux_amd64.tar.gz"
-      sha256 "0bf777a511f80a3893ae08588dd5722eef370b4a4d4b25fac56ae7d06421cca6"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.2/wigwam_0.8.2_linux_amd64.tar.gz"
+      sha256 "7a4ea618bcecfc929b05777406597b7c4fd3fbf58a2e1c88e1a7e88d840c3c52"
       define_method(:install) do
         bin.install "wigwam"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.1/wigwam_0.8.1_linux_arm64.tar.gz"
-      sha256 "b8eadf63c46614cf7ea1e58137563e4d134a69211e5f8b112761bea36639d983"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.8.2/wigwam_0.8.2_linux_arm64.tar.gz"
+      sha256 "548546395853c42218a4948a70f991a24a0da3c6bc4d6a3218dd8b27c383df12"
       define_method(:install) do
         bin.install "wigwam"
       end
