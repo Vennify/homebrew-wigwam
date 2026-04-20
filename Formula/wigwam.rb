@@ -1,26 +1,26 @@
 class Wigwam < Formula
   desc "Access terminal sessions from the browser"
   homepage "https://github.com/Vennify/wigwam-releases"
-  version "scode-v0.2.0"
+  version "0.1.0-beta"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/vscode-v0.2.0/wigwam_darwin_arm64.tar.gz"
-      sha256 "3380166be2465713ae21164f570ab327e45dde2ba75737096a1f56f179831231"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.1.0-beta/wigwam_darwin_arm64.tar.gz"
+      sha256 "d78850a46c025c3fecda764f7feca24526bea072d54ffdceede86f072b30cb63"
     else
-      url "https://github.com/Vennify/wigwam-releases/releases/download/vscode-v0.2.0/wigwam_darwin_amd64.tar.gz"
-      sha256 "e81f5458931d7170346f6aee89d2fda17a3657fb2064798775043fd99038d7a1"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.1.0-beta/wigwam_darwin_amd64.tar.gz"
+      sha256 "f7efc9e05c817c16fc5644e812a0f95247346b3a73e3a9429a164978f0b7d75e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/vscode-v0.2.0/wigwam_linux_arm64.tar.gz"
-      sha256 "f6deb222b3a709b96764c40eb51c4f64f53e347ac9938f718c6d5f789da66e3d"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.1.0-beta/wigwam_linux_arm64.tar.gz"
+      sha256 "e1a99636adb9bdf30b812934e88e7972b620a229e323a3a8a2eb25d51e99d703"
     else
-      url "https://github.com/Vennify/wigwam-releases/releases/download/vscode-v0.2.0/wigwam_linux_amd64.tar.gz"
-      sha256 "99980d4e1dd53ae7877468d9ec9b8688c542890fecc40f3b50fe864d83eee3b4"
+      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.1.0-beta/wigwam_linux_amd64.tar.gz"
+      sha256 "45b82cf6f22be675e6c3f81d386927ec8e0142e190125d754ddde575905b3634"
     end
   end
 
