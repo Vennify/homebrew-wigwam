@@ -1,26 +1,26 @@
 class Wigwam < Formula
   desc "Access terminal sessions from the browser"
   homepage "https://github.com/Vennify/wigwam-releases"
-  version "0.2.0-beta"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.2.0-beta/wigwam_darwin_arm64.tar.gz"
-      sha256 "066442aa61e2ebb528b8186a3bae52b6c4fe4f4bb2691e2e9213cf8c25749c34"
+      url "https://releases.wigwam.build/hut/v0.5.0/wigwam_darwin_arm64.tar.gz"
+      sha256 "d811fdcca9c40e7f3a9de6932da7ac624c2455901add7c35f9dcd27dfd046eed"
     else
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.2.0-beta/wigwam_darwin_amd64.tar.gz"
-      sha256 "4c3ff9f07587279e4f31aef4886cccaeab4548fae5fc164fe4b200a6c959e33d"
+      url "https://releases.wigwam.build/hut/v0.5.0/wigwam_darwin_amd64.tar.gz"
+      sha256 "f9aa8f7a818a51b1b6052b1d9d48a634a280136bc8a8aaec6e36f0469a54ac3b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.2.0-beta/wigwam_linux_arm64.tar.gz"
-      sha256 "547f6c7ede2822b3ccb961914e8e6b7f439a442c675336eaa98d42d2751f0c1d"
+      url "https://releases.wigwam.build/hut/v0.5.0/wigwam_linux_arm64.tar.gz"
+      sha256 "95f0969b270c51403d65dc382d032e59a5d6c8ab682684ab948dd58cc1771d38"
     else
-      url "https://github.com/Vennify/wigwam-releases/releases/download/v0.2.0-beta/wigwam_linux_amd64.tar.gz"
-      sha256 "82d6de5e68b47c4f4197fe860fb0e59b022621e4382d456cecb004646e6cc6ca"
+      url "https://releases.wigwam.build/hut/v0.5.0/wigwam_linux_amd64.tar.gz"
+      sha256 "acbd36262ef5241f100a96a95ba9e34b1c2da3143d1170a6adbe73f33b8f2b67"
     end
   end
 
@@ -28,6 +28,7 @@ class Wigwam < Formula
     bin.install "wigwam"
     bin.install_symlink "wigwam" => "ww"
     bin.install_symlink "wigwam" => "wwx"
+    bin.install_symlink "wigwam" => "wigwam-codex"
   end
 
   def caveats
